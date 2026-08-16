@@ -543,52 +543,117 @@ a {
   flex-wrap: wrap;
 }
 
-/* Hero Media & Portrait Card */
+/* Hero Media & Cutout Showcase */
 .hero-media {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
-.portrait-card {
+.cutout-showcase {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Dynamic Radial Aura Backdrop behind the Cutout */
+.cutout-backdrop {
+  position: absolute;
+  top: 20px;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 45% 40%, rgba(56, 189, 248, 0.22) 0%, rgba(37, 99, 235, 0.12) 45%, rgba(15, 23, 42, 0.4) 80%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow: 0 0 50px rgba(56, 189, 248, 0.15), inset 0 0 30px rgba(56, 189, 248, 0.1);
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-theme="light"] .cutout-backdrop {
+  background: radial-gradient(circle at 45% 40%, rgba(2, 132, 199, 0.15) 0%, rgba(226, 232, 240, 0.8) 60%, rgba(241, 245, 249, 0.95) 90%);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  box-shadow: 0 10px 35px rgba(2, 132, 199, 0.12);
+}
+
+.backdrop-glow-core {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
+  opacity: 0.35;
+  filter: blur(25px);
+}
+
+.backdrop-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed var(--border-color);
+  animation: rotateRing 40s linear infinite;
+}
+
+.ring-outer {
+  width: 320px;
+  height: 320px;
+  border-color: rgba(56, 189, 248, 0.2);
+}
+
+.ring-inner {
+  width: 250px;
+  height: 250px;
+  border-color: rgba(56, 189, 248, 0.15);
+  animation-direction: reverse;
+  animation-duration: 30s;
+}
+
+@keyframes rotateRing {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Image Container with smooth gradient bottom fade */
+.cutout-image-wrapper {
+  position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 340px;
+  height: 410px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
-.portrait-image-wrapper {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  aspect-ratio: 3 / 4;
-  background: var(--bg-tertiary);
-  border: 2px solid var(--border-color);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 35px var(--accent-glow);
-  transition: transform var(--transition-normal), border-color var(--transition-normal);
-}
-
-.portrait-card:hover .portrait-image-wrapper {
-  border-color: var(--accent-cyan);
-  transform: translateY(-4px);
-}
-
-.portrait-img {
+.cutout-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: bottom center;
   display: block;
-  transition: transform 0.4s ease;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.45));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
-.portrait-card:hover .portrait-img {
-  transform: scale(1.02);
+.cutout-showcase:hover .cutout-img {
+  transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 20px rgba(56, 189, 248, 0.2));
 }
 
 .portrait-caption {
-  margin-top: 0.9rem;
+  position: relative;
+  z-index: 3;
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -597,7 +662,7 @@ a {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
-  padding: 0.45rem 1rem;
+  padding: 0.45rem 1.1rem;
   border-radius: var(--radius-full);
   box-shadow: var(--card-shadow);
   font-size: 0.82rem;
@@ -1603,8 +1668,29 @@ a {
     font-size: 0.95rem;
   }
 
-  .portrait-card {
-    max-width: 250px;
+  .cutout-showcase {
+    max-width: 280px;
+  }
+
+  .cutout-backdrop {
+    width: 230px;
+    height: 230px;
+    top: 15px;
+  }
+
+  .ring-outer {
+    width: 250px;
+    height: 250px;
+  }
+
+  .ring-inner {
+    width: 190px;
+    height: 190px;
+  }
+
+  .cutout-image-wrapper {
+    max-width: 270px;
+    height: 330px;
   }
 
   .status-pill {
@@ -1819,8 +1905,29 @@ a {
     font-size: 2.05rem;
   }
 
-  .portrait-card {
+  .cutout-showcase {
+    max-width: 230px;
+  }
+
+  .cutout-backdrop {
+    width: 190px;
+    height: 190px;
+    top: 10px;
+  }
+
+  .ring-outer {
+    width: 210px;
+    height: 210px;
+  }
+
+  .ring-inner {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cutout-image-wrapper {
     max-width: 220px;
+    height: 275px;
   }
 
   .portrait-caption {
