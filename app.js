@@ -4,7 +4,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
-  initSkillsFilter();
   initCopyHandlers();
   initMobileMenu();
   initScrollSpy();
@@ -34,32 +33,6 @@ function initTheme() {
       localStorage.setItem('bm_portfolio_theme', newTheme);
     });
   }
-}
-
-/* --------------------------------------------------------------------------
-   Skills Categorization Filter
-   -------------------------------------------------------------------------- */
-function initSkillsFilter() {
-  const filterTabs = document.querySelectorAll('.filter-tab');
-  const skillPills = document.querySelectorAll('.skill-pill');
-
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      filterTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const filter = tab.getAttribute('data-filter');
-
-      skillPills.forEach(pill => {
-        const category = pill.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          pill.classList.remove('hidden');
-        } else {
-          pill.classList.add('hidden');
-        }
-      });
-    });
-  });
 }
 
 /* --------------------------------------------------------------------------

@@ -68,14 +68,14 @@
           </svg>
         </button>
 
-        <button id="btn-print" class="btn btn-secondary btn-sm" onclick="window.print()" title="Print / Download PDF Resume">
+        <a id="btn-download" class="btn btn-secondary btn-sm" href="Biswanath-Maity-CV.pdf" download="Biswanath-Maity-CV.pdf" title="Download CV (PDF)">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-            <rect x="6" y="14" width="12" height="8"></rect>
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
-          <span>Print / PDF</span>
-        </button>
+          <span>Download CV</span>
+        </a>
 
         <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
 
@@ -140,22 +140,31 @@
                 <span class="copy-hint">Copy</span>
               </button>
 
+              <a href="https://wa.me/919679210880" target="_blank" rel="noopener noreferrer" class="contact-chip link-chip" title="Chat on WhatsApp">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25.7-.99 1.28-1.74 1.34-.49.04-1.13-.08-3.32-1.03-2.34-1.01-3.86-3.39-3.98-3.55-.12-.16-.94-1.25-.94-2.39s.59-1.69.8-1.92c.21-.23.46-.29.62-.29h.45c.14 0 .33.02.48.37.16.37.55 1.34.6 1.44.05.1.09.22.02.35s-.11.22-.22.34l-.33.37c-.11.11-.23.23-.1.46.13.23.58.96 1.25 1.55.86.77 1.59 1.01 1.82 1.12.23.11.36.09.49-.06.13-.15.56-.65.71-.88.15-.22.3-.19.51-.11s1.33.63 1.56.74.38.17.44.27c.06.1.06.59-.19 1.29z"/></svg>
+                <span>WhatsApp</span>
+              </a>
+
               <a href="https://www.linkedin.com/in/biswanathmaity/" target="_blank" rel="noopener noreferrer" class="contact-chip link-chip" title="View LinkedIn Profile">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <span>linkedin.com/in/biswanathmaity</span>
+                <span>LinkedIn</span>
               </a>
 
               <div class="contact-chip static-chip">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <span>Mumbai, Maharashtra, India</span>
+                <span>Mumbai, MH</span>
               </div>
             </div>
 
             <div class="hero-actions">
-              <button class="btn btn-primary" onclick="window.print()">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-                <span>Download / Print Resume</span>
-              </button>
+              <a href="Biswanath-Maity-CV.pdf" download="Biswanath-Maity-CV.pdf" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download CV</span>
+              </a>
               <a href="#experience" class="btn btn-outline">
                 <span>View Career History</span>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -684,64 +693,164 @@
       </div>
     </section>
 
-    <!-- Skills & Tooling Explorer -->
+    <!-- Skills & Technical Competency Matrix -->
     <section id="skills" class="section">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">Capabilities</span>
-          <h2 class="section-title">Skills & Competency Matrix</h2>
-          <p class="section-subtitle">Filter through specialized technical tools, standards, and methodologies</p>
+          <h2 class="section-title">Technical Competency Matrix</h2>
+          <p class="section-subtitle">Comprehensive proficiencies across power distribution, electrical testing, industrial automation, and standards</p>
         </div>
 
-        <div class="skills-filter-container">
-          <div class="filter-tabs" role="tablist">
-            <button class="filter-tab active" data-filter="all">All Skills</button>
-            <button class="filter-tab" data-filter="panels">Panels & Switchgear</button>
-            <button class="filter-tab" data-filter="testing">Testing & QA</button>
-            <button class="filter-tab" data-filter="automation">Automation & EPMS</button>
-            <button class="filter-tab" data-filter="standards">Standards & Delivery</button>
-          </div>
+        <div class="competency-wrapper">
+          <div class="competency-grid" id="competency-grid">
+            <!-- Card 1: Power & Panels -->
+            <div class="competency-card card" data-category="panels">
+              <div class="competency-card-header">
+                <div class="competency-icon">⚡</div>
+                <div>
+                  <h3 class="competency-card-title">Power Systems & Panels</h3>
+                  <p class="competency-card-sub">Low Tension & Switchgear Distribution</p>
+                </div>
+              </div>
+              <div class="competency-list">
+                <div class="competency-item">
+                  <span class="comp-name">LT Power Distribution Panels</span>
+                  <span class="comp-tag">IS/IEC 61439</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Auto/Manual Changeover (ATS/AMF)</span>
+                  <span class="comp-tag">Auto-Transfer</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Transformer Controls (RTCC & M.Box)</span>
+                  <span class="comp-tag">Protection</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Power Distribution Units (PDU)</span>
+                  <span class="comp-tag">Tier-III/IV</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">ACB & MCCB Switchgear Selection</span>
+                  <span class="comp-tag">Sizing & Layout</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Panelboard Assembly & Schematics</span>
+                  <span class="comp-tag">Engineering</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="skills-cloud" id="skills-cloud">
-            <!-- Panels -->
-            <div class="skill-pill" data-category="panels">⚡ LT Power Panels</div>
-            <div class="skill-pill" data-category="panels">⚡ Changeover Panels (ATS/AMF)</div>
-            <div class="skill-pill" data-category="panels">⚡ Transformer Control Panels (RTCC)</div>
-            <div class="skill-pill" data-category="panels">⚡ Marshalling Box (M.Box)</div>
-            <div class="skill-pill" data-category="panels">⚡ Power Distribution Units (PDU)</div>
-            <div class="skill-pill" data-category="panels">⚡ Switchgear Selection & Sizing</div>
-            <div class="skill-pill" data-category="panels">⚡ Air Circuit Breakers (ACB) & MCCB</div>
-            <div class="skill-pill" data-category="panels">⚡ Panelboard Assembly & Layout</div>
+            <!-- Card 2: Testing & QA -->
+            <div class="competency-card card" data-category="testing">
+              <div class="competency-card-header">
+                <div class="competency-icon">🔬</div>
+                <div>
+                  <h3 class="competency-card-title">Testing Protocols & QA</h3>
+                  <p class="competency-card-sub">Dielectric, Contact & Relay Verification</p>
+                </div>
+              </div>
+              <div class="competency-list">
+                <div class="competency-item">
+                  <span class="comp-name">HiPot (High Potential) Dielectric Testing</span>
+                  <span class="comp-tag">High Voltage</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Insulation Resistance (IR / Megger)</span>
+                  <span class="comp-tag">Pre/Post Test</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Ductor & Contact Resistance Testing</span>
+                  <span class="comp-tag">Micro-Ohm</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Secondary Injection & Protection Relays</span>
+                  <span class="comp-tag">Trip Curves</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Breaker Timing & Torque Verification</span>
+                  <span class="comp-tag">Calibrated</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Site Acceptance Testing (SAT & FAT)</span>
+                  <span class="comp-tag">Client Signoff</span>
+                </div>
+              </div>
+            </div>
 
-            <!-- Testing -->
-            <div class="skill-pill" data-category="testing">🔬 Project Commissioning</div>
-            <div class="skill-pill" data-category="testing">🔬 Electrical Testing (IS/IEC)</div>
-            <div class="skill-pill" data-category="testing">🔬 HiPot (Dielectric) Testing</div>
-            <div class="skill-pill" data-category="testing">🔬 Insulation Resistance (IR / Megger)</div>
-            <div class="skill-pill" data-category="testing">🔬 Ductor / Contact Resistance</div>
-            <div class="skill-pill" data-category="testing">🔬 Secondary Injection Testing</div>
-            <div class="skill-pill" data-category="testing">🔬 Breaker Operational Timing</div>
-            <div class="skill-pill" data-category="testing">🔬 Torque & Mechanical Testing</div>
-            <div class="skill-pill" data-category="testing">🔬 Technical Drawing & Schematics</div>
-            <div class="skill-pill" data-category="testing">🔬 Site Acceptance Testing (SAT)</div>
+            <!-- Card 3: Automation & EPMS -->
+            <div class="competency-card card" data-category="automation">
+              <div class="competency-card-header">
+                <div class="competency-icon">💻</div>
+                <div>
+                  <h3 class="competency-card-title">EPMS & BMS Automation</h3>
+                  <p class="competency-card-sub">Supervisory Control & Telemetry Protocols</p>
+                </div>
+              </div>
+              <div class="competency-list">
+                <div class="competency-item">
+                  <span class="comp-name">EPMS Systems Integration</span>
+                  <span class="comp-tag">Real-Time</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">BMS Interface & Commissioning</span>
+                  <span class="comp-tag">Building Auto</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Modbus RTU & Modbus TCP</span>
+                  <span class="comp-tag">Fieldbus</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Schneider Smartlink Systems</span>
+                  <span class="comp-tag">Connected</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">SCADA Telemetry & Power Metering</span>
+                  <span class="comp-tag">Data Logging</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Interlock & Safety Logic Verification</span>
+                  <span class="comp-tag">Fail-Safe</span>
+                </div>
+              </div>
+            </div>
 
-            <!-- Automation -->
-            <div class="skill-pill" data-category="automation">💻 EPMS Integration</div>
-            <div class="skill-pill" data-category="automation">💻 BMS Integration</div>
-            <div class="skill-pill" data-category="automation">💻 PLC Control Panels</div>
-            <div class="skill-pill" data-category="automation">💻 Modbus RTU / Modbus TCP</div>
-            <div class="skill-pill" data-category="automation">💻 Schneider Smartlink</div>
-            <div class="skill-pill" data-category="automation">💻 SCADA Systems</div>
-            <div class="skill-pill" data-category="automation">💻 Digital Energy Metering</div>
-            <div class="skill-pill" data-category="automation">💻 Interlock Logic Verification</div>
-
-            <!-- Standards -->
-            <div class="skill-pill" data-category="standards">📋 Tier-III & Tier-IV Data Centers</div>
-            <div class="skill-pill" data-category="standards">📋 IS / IEC Electrical Standards</div>
-            <div class="skill-pill" data-category="standards">📋 Electrical Safety Protocols</div>
-            <div class="skill-pill" data-category="standards">📋 Client & Vendor Coordination</div>
-            <div class="skill-pill" data-category="standards">📋 QA / QC Documentation</div>
-            <div class="skill-pill" data-category="standards">📋 Site Team Leadership</div>
+            <!-- Card 4: Standards & Execution -->
+            <div class="competency-card card" data-category="standards">
+              <div class="competency-card-header">
+                <div class="competency-icon">🏢</div>
+                <div>
+                  <h3 class="competency-card-title">Standards & Execution</h3>
+                  <p class="competency-card-sub">Mission-Critical Delivery & Governance</p>
+                </div>
+              </div>
+              <div class="competency-list">
+                <div class="competency-item">
+                  <span class="comp-name">Tier-III & Tier-IV Data Centers</span>
+                  <span class="comp-tag">99.999% Uptime</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">IS & IEC Electrical Standards</span>
+                  <span class="comp-tag">Regulatory</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Single Line Diagrams (SLD)</span>
+                  <span class="comp-tag">Schematics</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Client, Supplier & Site Leadership</span>
+                  <span class="comp-tag">Coordination</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">QA/QC Checksheets & Handover</span>
+                  <span class="comp-tag">Zero-Defect</span>
+                </div>
+                <div class="competency-item">
+                  <span class="comp-name">Electrical Safety & LOTO Protocols</span>
+                  <span class="comp-tag">Safety First</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -801,22 +910,36 @@
                 </div>
               </a>
 
+              <a href="https://wa.me/919679210880" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="method-icon" style="color: #25D366;">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25.7-.99 1.28-1.74 1.34-.49.04-1.13-.08-3.32-1.03-2.34-1.01-3.86-3.39-3.98-3.55-.12-.16-.94-1.25-.94-2.39s.59-1.69.8-1.92c.21-.23.46-.29.62-.29h.45c.14 0 .33.02.48.37.16.37.55 1.34.6 1.44.05.1.09.22.02.35s-.11.22-.22.34l-.33.37c-.11.11-.23.23-.1.46.13.23.58.96 1.25 1.55.86.77 1.59 1.01 1.82 1.12.23.11.36.09.49-.06.13-.15.56-.65.71-.88.15-.22.3-.19.51-.11s1.33.63 1.56.74.38.17.44.27c.06.1.06.59-.19 1.29z"/></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">WhatsApp</span>
+                  <span class="method-val">+91 9679210880</span>
+                </div>
+              </a>
+
               <a href="https://www.linkedin.com/in/biswanathmaity/" target="_blank" rel="noopener noreferrer" class="contact-method-card">
                 <div class="method-icon">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </div>
                 <div class="method-details">
                   <span class="method-label">LinkedIn Profile</span>
-                  <span class="method-val">linkedin.com/in/biswanathmaity</span>
+                  <span class="method-val">biswanathmaity</span>
                 </div>
               </a>
             </div>
 
             <div class="contact-footer-action">
-              <button class="btn btn-primary" onclick="window.print()">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-                <span>Print Official CV (PDF)</span>
-              </button>
+              <a href="Biswanath-Maity-CV.pdf" download="Biswanath-Maity-CV.pdf" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download CV</span>
+              </a>
             </div>
           </div>
         </div>
