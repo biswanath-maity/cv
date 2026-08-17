@@ -1526,6 +1526,27 @@ a {
   color: var(--text-muted) !important;
 }
 
+.footer-credit {
+  font-size: 0.78rem !important;
+  color: var(--text-muted) !important;
+  margin-top: 0.35rem;
+}
+
+.credit-link {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent-cyan);
+  transition: all var(--transition-fast);
+  padding-bottom: 1px;
+}
+
+.credit-link:hover {
+  color: var(--text-primary);
+  border-bottom-style: solid;
+  border-bottom-color: var(--text-primary);
+}
+
 .back-to-top {
   display: inline-flex;
   align-items: center;

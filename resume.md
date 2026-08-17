@@ -68,3 +68,7 @@ Testing & Commissioning Engineer with **7+ years** of hands-on experience in ele
 - **Bengali:** Native or Bilingual
 - **Hindi:** Full Professional Proficiency
 - **English:** Professional Working Proficiency
+
+---
+
+*Designed and maintained by [Kalyan](https://kalyansingh.com/)*
